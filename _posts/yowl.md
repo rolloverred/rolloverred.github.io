@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Yowl, I nearly forgot!"
+date:   2025-09-18 09:05:55 -0700
+categories: blue-note
+---
+
+Yowl, I nearly forgot!
+
+This is really important while going ahead too. I'm really going to love to know who and where you guys are. Who is your family or community? Who are your brothers and sisters? Just where do you hang your hat at the end of the day.
+
+Show everybody your true colors by getting a button, ribbon, pin, or patch, and stick it on your hat. It might be "Old Glory," or a rainbow, Canadian, Mexican, or Ukraine flag. Maybe it's a BLM flag, a logo, union label, or club, whatever! Don't be shy, tell the nation that you and your pals aren't bowing down to extremism.
+
+In the coming months, I'm going to be crossing this nation back and forth thousands of times and I need you to help me show everyone where we are and where we've been. This country is so big and beautiful and I'd love to see you post your pics of me along with you from all the fifty states (& D.C.), north and south of the border and overseas too. I'm also really anxious to meet your best pet pals. So, don't leave them at home, it's their future too. When they're happy, you're happy!
+
+Big wet dog kisses to all,
+Blue

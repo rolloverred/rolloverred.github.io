@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Okay Blue, I'll Run with You!"
+date:   2025-09-18 09:05:55 -0700
+categories: blue-note
+---
+
+Our time to act is now! Curling up on the couch like an old black lab is not going to work right now. We are losing people and institutions across our country every day to bigotry, hate, and absolute ignorance.
+
+The mid-term elections are on the horizon for your Congress. These elections are critical if Democrats are to be able to stop this president from continuing his fascist assaults. In addition, your state, county, municipality, and districts will all likely have elections for representatives, sheriffs, DA, commissioners, and more. So go out and organize and help them...today... Volunteer, canvass, campaign, donate money if you can. Then vote like your life depends on it, because it does!
+
+As for me, I don't have a vote (grrr!). But I'm not resting one doggone minute, and I refuse to go through the next three years growling at all those unhappy, bitter, and often vulgar people screaming and wearing those bonker red hats... So, here's my "bigly" idea, how about a really big bunch of blue ones instead?
+
+Can you imagine for a minute, a sea of blue hats starring "yours truly," running over "MAGA" and encouraging all of you to follow? Then we could all join together in every democratic race throughout this country. No matter how big or small, we'd have a united front and a message for a progressive and inclusive future. A future that includes a real chance at the American Dream for everyone. This patriotic blue cap will join us together as one in all the states that we travel during the coming months. How about it? This is our time to stand up and be counted and to be really seen! Remember, "in union there is strength."
+
+While you guys get your hats (and don't forget your friends), I'm going to be busy sending them to party leaders and campaigns wherever I can. At the same time, my family and friends are going to help me with something called "social media" (sounds strangely contagious to me). In fact, some of it kinda sounds a bit like the movies with video and stuff. I even heard that there is a site called Zoomie? Wow, I hope to see you all there very soon!
+
+Blue
