@@ -11,10 +11,31 @@ layout: default
 
   <img class="center-image" src="{{ '/assets/images/header.jpg' | relative_url }}" alt="Blue" style="width: 50%;">
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <!-- <div class="page-list">
+    <ul class="post-list"> 
+      {% assign pages = site.pages | sort:"order" %}
+      {% for page in pages %}
+        {% if page.title and page.layout == 'page' and page.url != '/about/' and page.url != '/shop/'%} 
+        <li>
+          <h3>
+            <a class="page-link" href="{{ page.url | relative_url }}">
+              {{ page.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <hr> 
+  </div> -->
+    
+  {% assign posts = site.posts | sort:"order" %}
+  {%- if posts.size > 0 -%}
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
