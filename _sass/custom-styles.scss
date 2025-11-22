@@ -4,3 +4,61 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* 1. Main Container: Enables Flexbox Layout */
+  .image-gallery-4col {
+    display: flex; /* Key to placing items in a row */
+    flex-wrap: nowrap; /* Prevents wrapping onto the next line unless specifically broken by a media query */
+    justify-content: space-between; /* Distributes space between the images */
+    gap: 1%; /* Use a small percentage for flexible spacing between images */
+    width: 100%; /* Ensure the container spans the full content width */
+    margin: 20px auto; /* Center the container with vertical spacing */
+    max-width: var(--content-width, 940px); /* Use Minima's typical max width if defined, or a safe default */
+  }
+  
+  /* 2. Individual Image Container: Defines the width */
+  .gallery-item {
+    /* This is the crucial line for equal width: */
+    /* It says: Grow/Shrink by 1, and the base width is slightly less than 25% */
+    flex: 1 1 calc(25% - 0.75%); /* Takes 25% of the total width minus a bit for the 1% gaps on three sides */
+    min-width: 0; /* Ensures the item can shrink if needed */
+    text-align: center;
+  }
+  
+  /* 3. The Image itself: Stretches to fill the container */
+  .gallery-item img {
+    width: 100%; /* The image fills the width of its container (.gallery-item) */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Optional: ensures images cover the space without stretching */
+  }
+  
+  /* 4. (Optional but Recommended) Responsive Adjustment for Mobile */
+  @media (max-width: 768px) {
+    .image-gallery-4col {
+      /* On tablets/smaller screens, switch to 2 images per row */
+      flex-wrap: wrap; 
+    }
+    .gallery-item {
+      /* Each item takes roughly 50% of the width */
+      flex: 1 1 calc(50% - 1%); 
+      margin-bottom: 10px; /* Add vertical space when wrapping */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      /* On small phones, switch to 1 image per row */
+      flex: 1 1 100%;
+    }
+  }
+
+/* Caption Styling */
+.image-caption {
+  font-size: 0.75em; /* Changed from 0.85em to 0.75em for a smaller size */
+  margin-top: 5px; 
+  margin-bottom: 0; 
+  padding: 0 2px; 
+  color: #777; 
+  text-align: center; 
+}
