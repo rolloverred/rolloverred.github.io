@@ -10,7 +10,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Roll Over Red is an American brand. We unify people around honest politics. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rolloverred.com" # the base hostname & protocol for your site, e.g. http://example.com
-instagram_username: rollovered
+instagram_username: roll.over.red
 twitter_username: rollovered
 # github_username:  jekyll
 
