@@ -3,4 +3,4 @@ layout: page
 title: Shop
 permalink: /shop/
 ---
-Shop here.
+Coming January, 2026.
