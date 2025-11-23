@@ -14,25 +14,40 @@ layout: default
   <div class="image-gallery-4col">
     <div class="gallery-item">
       <a href="/assets/images/hats/blue_hat.jpg">
-        <img src="{{ '/assets/images/hats/blue_hat.jpg' | relative_url }}" alt="Description of Image 1">
+        <div class="image-swap-container">
+            <img src="{{ '/assets/images/hats/blue_hat.jpg' | relative_url }}" alt="Blue Dad Cap - Front" class="image-front">
+            <img src="{{ '/assets/images/hats/blue_back.jpg' | relative_url }}" alt="Blue Dad Cap - Back" class="image-back">
+        </div>
       </a>
       <p class="image-caption">Blue Dad Cap</p>
     </div>
+
     <div class="gallery-item">
       <a href="/assets/images/hats/dad_hat.jpg">
-        <img src="{{ '/assets/images/hats/dad_hat.jpg' | relative_url }}" alt="Description of Image 2">
+        <div class="image-swap-container">
+            <img src="{{ '/assets/images/hats/dad_hat.jpg' | relative_url }}" alt="Blue Dad Cap - Front" class="image-front">
+            <img src="{{ '/assets/images/hats/dad_back.jpg' | relative_url }}" alt="Blue Dad Cap - Back" class="image-back">
+        </div>
       </a>
       <p class="image-caption">Heather Dad Cap</p>
     </div>
+
     <div class="gallery-item">
       <a href="/assets/images/hats/bright_blue.jpg">
-        <img src="{{ '/assets/images/hats/bright_blue.jpg' | relative_url }}" alt="Description of Image 3">
+        <div class="image-swap-container">
+            <img src="{{ '/assets/images/hats/bright_blue.jpg' | relative_url }}" alt="Blue Rope Cap - Front" class="image-front">
+            <img src="{{ '/assets/images/hats/bright_blue_back.jpg' | relative_url }}" alt="Blue Rope Cap - Back" class="image-back">
+        </div>
       </a>
       <p class="image-caption">Blue Rope Cap</p>
     </div>
+
     <div class="gallery-item">
       <a href="/assets/images/hats/trucker_hat.jpg">
-        <img src="{{ '/assets/images/hats/trucker_hat.jpg' | relative_url }}" alt="Description of Image 4">
+        <div class="image-swap-container">
+            <img src="{{ '/assets/images/hats/trucker_hat.jpg' | relative_url }}" alt="Blue Rope Cap - Front" class="image-front">
+            <img src="{{ '/assets/images/hats/bright_blue_back.jpg' | relative_url }}" alt="Blue Rope Cap - Back" class="image-back">
+        </div>
       </a>
       <p class="image-caption">Blue Trucker Cap</p>
     </div>

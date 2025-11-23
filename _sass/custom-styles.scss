@@ -62,3 +62,46 @@
   color: #777; 
   text-align: center; 
 }
+
+/* --- Image Hover Swap Styles --- */
+
+/* 1. New Container: Manages the stacking and hover state */
+.image-swap-container {
+  position: relative; /* Key: Establishes a positioning context for the absolute images */
+  width: 100%;
+  padding-top: 100%; /* Optional: Use this to maintain a perfect square aspect ratio (1:1). Adjust the percentage for other ratios (e.g., 75% for 4:3) */
+  height: 0; /* Set height to 0 when using padding-top for ratio control */
+  overflow: hidden; /* Ensures images don't spill out */
+  cursor: pointer; /* Provides a visual cue that the element is interactive */
+}
+
+/* 2. Base Image (.image-front) */
+.image-swap-container .image-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1; /* Fully visible by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* 3. Hover Image (.image-back) */
+.image-swap-container .image-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Fully hidden by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* 4. Hover State: What happens when the mouse is over the container */
+.image-swap-container:hover .image-front {
+  opacity: 0; /* Hide the front image */
+}
+
+.image-swap-container:hover .image-back {
+  opacity: 1; /* Show the back image */
+}
