@@ -105,3 +105,30 @@
 .image-swap-container:hover .image-back {
   opacity: 1; /* Show the back image */
 }
+
+// Custom styles to override minima defaults
+.site-footer {
+  font-size: 14px; /* Change this value to your desired font size */
+}
+
+/* You might also want to target the contact list specifically */
+.site-footer .contact-list {
+  font-size: 14px; /* Adjust if the first size doesn't cover everything */
+}
+
+/* 1. Targets the social media icons/links */
+.site-footer .social-media-list {
+  font-size: 14px; 
+}
+
+/* 2. Targets the site description text */
+.site-footer .footer-col-wrapper {
+  // This targets the column that holds the description
+  font-size: 14px; 
+}
+
+/* 3. If the above still doesn't cover everything, target the specific columns */
+.site-footer .footer-col-1, 
+.site-footer .footer-col-2 {
+  font-size: 14px;
+}
