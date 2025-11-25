@@ -132,3 +132,14 @@
 .site-footer .footer-col-2 {
   font-size: 14px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cushing Heavy BT', sans-serif !important; 
+  /* The !important flag is used here only to forcibly override 
+     any conflicting styles from the Minima theme. */
+}
+
+/* Change the default color of the site title link */
+.site-title {
+  color: #111 !important; 
+}
