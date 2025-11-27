@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Who Are You Blue?
+title: Blue's Tale
 date:  2025-09-18 09:05:55 -0700
 order: 1
 ---
