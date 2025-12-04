@@ -7,7 +7,7 @@ show_excerpts: true
 title: Roll Over Red
 #email:  fourblumutts@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Roll Over Red is an American brand. We unify people around honest politics. 
+  We are on a crusade to unite voters behind better leaders. We deserve politicians who champion honest dialogue, compassion, justice, and policies that work for everyone.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://rolloverred.com" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: roll.over.red

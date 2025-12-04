@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
-
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
   <img class="center-image" src="{{ '/assets/images/header.jpg' | relative_url }}" alt="Blue" style="width: 50%;">
+
+  {{ content }}
 
   <div class="image-gallery-4col">
     <div class="gallery-item">
