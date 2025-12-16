@@ -7,7 +7,7 @@ order:
 
 Friends, voting is easier than ever these days! 
 
-The first thing you need to know is that you have to *register to vote*. Whoa. Hold on. Sit down and stay for a minute! It’s not that difficult. I can do this and I only have eight toes!
+The first thing you need to know is that you have to *register to vote*. Whoa. Hold on. Sit down and stay for a minute! It’s not that difficult. I can do this, and I only have eight toes!
 
 This is a state and local thing, right in your own backyard. Some states might have different guidelines than others, but registering is like me chasing a taco truck blindfolded; it’s easy!
 
@@ -15,9 +15,9 @@ This is a state and local thing, right in your own backyard. Some states might h
 
 If you can get online, [vote.gov](https://vote.gov/) is a great place to start. Online registration is offered in 43 states. 
 
-A. Select your state from the list. To find it you can scroll or type in the post office abbreviation: PA if you live in Pennsylvania, KY if you live in Kentucky, and so on. Spell out the full name if you want to show-off. 
-B. Once you found your state, click the big blue button “Registration or update registration.”
-C. From your state’s registration website, fill out the form, submit, then you're registered!
+**A**. Select your state from the list. To find it you can scroll or type in the post office abbreviation: PA if you live in Pennsylvania, KY if you live in Kentucky, and so on. Spell out the full name if you want to show-off.   
+**B**. Once you found your state, click the big blue button “Registration or update registration.”  
+**C**. From your state’s registration website, fill out the form, submit, then you're registered!  
 
 **Registering In-person**  
 
