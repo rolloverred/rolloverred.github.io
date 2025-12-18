@@ -1,0 +1,81 @@
+<style>
+  .image-gallery {
+    display: grid;
+    /* Forces exactly 3 columns on desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .gallery-item {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Internal link style (Image & Title) */
+  .gallery-item .internal-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Keeps everything in a perfect grid */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    display: block;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.02);
+  }
+
+  .product-title {
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+    line-height: 1.2;
+  }
+
+  /* External Link Style (Price) */
+  .product-price-link {
+    color: #d33; /* Using a distinct color for the buy link */
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* Responsive: 1 column on mobile */
+  @media (max-width: 600px) {
+    .image-gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
+
+<div class="image-gallery">
+  {% for item in site.products %}
+    <div class="gallery-item">
+      <a href="{{ item.url | relative_url }}" class="internal-link">
+        <img src="{{ item.image_path | relative_url }}" alt="{{ item.title }}" loading="lazy">
+        <span class="product-title">{{ item.title }}</span>
+      </a>
+
+      {% if item.price %}
+        {% if item.shop_url %}
+          <a href="{{ item.shop_url }}" target="_blank" class="product-price-link">
+            {{ item.price }}
+          </a>
+        {% else %}
+          <span class="product-price-link" style="color: #666; text-decoration: none;">
+            {{ item.price }}
+          </span>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

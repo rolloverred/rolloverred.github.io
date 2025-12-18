@@ -1,0 +1,71 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    <div class="product-slider" style="position: relative; width: 100%; margin-bottom: 30px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div class="slides">
+        {% if page.images %}
+          {% for img in page.images %}
+            <div class="slide" style="display: {% if forloop.first %}block{% else %}none{% endif %};">
+              <img src="{{ img | relative_url }}" alt="{{ page.title }}" style="width: 100%; display: block;">
+            </div>
+          {% endfor %}
+        {% elsif page.image_path %}
+          <div class="slide" style="display: block;">
+            <img src="{{ page.image_path | relative_url }}" alt="{{ page.title }}" style="width: 100%; display: block;">
+          </div>
+        {% endif %}
+      </div>
+
+      {% if page.images.size > 1 %}
+        <button onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 10px; cursor: pointer; border-radius: 4px; font-size: 20px; z-index: 10;">❮</button>
+        <button onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px 10px; cursor: pointer; border-radius: 4px; font-size: 20px; z-index: 10;">❯</button>
+      {% endif %}
+    </div>
+
+    <div class="product-details" style="background: #f9f9f9; padding: 30px; border-radius: 8px; text-align: center;">
+      {% if page.shop_url and page.price %}
+        <a href="{{ page.shop_url }}" target="_blank" class="buy-button" style="
+          display: inline-block;
+          background-color: #d33;
+          color: #fff;
+          padding: 15px 30px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 1.2em;
+          margin-bottom: 10px;
+          transition: background 0.3s ease;
+        ">
+          Purchase for {{ page.price }}
+        </a>
+        <p style="font-size: 0.8em; color: #666;">(You will be redirected to an external site)</p>
+      {% endif %}
+      
+      <div class="product-description" style="text-align: left; margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px;">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 40px;">
+    <a href="{{ '/shop/' | relative_url }}" style="text-decoration: none; color: #007bff;">← Back to Shop</a>
+  </div>
+</article>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function changeSlide(direction) {
+    if (slides.length <= 1) return;
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].style.display = 'block';
+  }
+</script>
