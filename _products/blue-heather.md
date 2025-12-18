@@ -1,6 +1,6 @@
 ---
 layout: product
-title: "Blue Heather Dad Cap"
+title: "Heather Dad Cap"
 image_path: "/assets/images/hats/dad_hat.jpg"
 images:
   - "/assets/images/hats/dad_hat.jpg"
