@@ -1,6 +1,58 @@
 ---
 layout: default
 ---
+<style>
+  /* Grid settings for two columns */
+  .image-gallery-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* This creates exactly two equal columns */
+    grid-gap: 30px; /* Space between the images */
+    margin: 40px 0;
+  }
+
+  .gallery-item {
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .gallery-item img {
+    width: 100%; /* Spans the full width of the grid column */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Keeps images square; change to 4/5 for a portrait look */
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .image-caption {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .gallery-link {
+    text-decoration: none;
+  }
+
+  .center-image {
+    display: block;
+    margin: 0 auto 2rem;
+  }
+
+  /* Mobile adjustment: Switch to 1 column on very small screens */
+  @media (max-width: 600px) {
+    .image-gallery-2col {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -12,84 +64,31 @@ layout: default
 
   <div class="image-gallery-4col">
     <div class="gallery-item">
-      <a href="/assets/images/hats/blue_hat.jpg">
-        <div class="image-swap-container">
-            <img src="{{ '/assets/images/hats/blue_hat.jpg' | relative_url }}" alt="Blue Dad Cap - Front" class="image-front">
-            <img src="{{ '/assets/images/hats/blue_back.jpg' | relative_url }}" alt="Blue Dad Cap - Back" class="image-back">
-        </div>
+      <a href="/products/blue-hat/" class="gallery-link">
+        <img src="{{ '/assets/images/hats/blue_hat.jpg' | relative_url }}" alt="Blue Dad Cap">
+        <p class="image-caption">Blue Dad Cap</p>
       </a>
-      <p class="image-caption">Blue Dad Cap</p>
     </div>
 
     <div class="gallery-item">
-      <a href="/assets/images/hats/dad_hat.jpg">
-        <div class="image-swap-container">
-            <img src="{{ '/assets/images/hats/dad_hat.jpg' | relative_url }}" alt="Blue Dad Cap - Front" class="image-front">
-            <img src="{{ '/assets/images/hats/dad_back.jpg' | relative_url }}" alt="Blue Dad Cap - Back" class="image-back">
-        </div>
+      <a href="/products/blue-heather/" class="gallery-link">
+        <img src="{{ '/assets/images/hats/dad_hat.jpg' | relative_url }}" alt="Heather Dad Cap">
+        <p class="image-caption">Heather Dad Cap</p>
       </a>
-      <p class="image-caption">Heather Dad Cap</p>
     </div>
 
     <div class="gallery-item">
-      <a href="/assets/images/hats/bright_blue.jpg">
-        <div class="image-swap-container">
-            <img src="{{ '/assets/images/hats/bright_blue.jpg' | relative_url }}" alt="Blue Rope Cap - Front" class="image-front">
-            <img src="{{ '/assets/images/hats/bright_blue_back.jpg' | relative_url }}" alt="Blue Rope Cap - Back" class="image-back">
-        </div>
+      <a href="/products/blue-rope/" class="gallery-link">
+        <img src="{{ '/assets/images/hats/bright_blue.jpg' | relative_url }}" alt="Blue Rope Cap">
+        <p class="image-caption">Blue Rope Cap</p>
       </a>
-      <p class="image-caption">Blue Rope Cap</p>
     </div>
 
     <div class="gallery-item">
-      <a href="/assets/images/hats/trucker_hat.jpg">
-        <div class="image-swap-container">
-            <img src="{{ '/assets/images/hats/trucker_hat.jpg' | relative_url }}" alt="Blue Rope Cap - Front" class="image-front">
-            <img src="{{ '/assets/images/hats/bright_blue_back.jpg' | relative_url }}" alt="Blue Rope Cap - Back" class="image-back">
-        </div>
+      <a href="/products/blue-trucker/" class="gallery-link">
+        <img src="{{ '/assets/images/hats/trucker_hat.jpg' | relative_url }}" alt="Blue Trucker Cap">
+        <p class="image-caption">Blue Trucker Cap</p>
       </a>
-      <p class="image-caption">Blue Trucker Cap</p>
     </div>
   </div>
-  <!-- <div class="page-list">
-    <ul class="post-list"> 
-      {% assign pages = site.pages | sort:"order" %}
-      {% for page in pages %}
-        {% if page.title and page.layout == 'page' and page.url != '/about/' and page.url != '/shop/'%} 
-        <li>
-          <h3>
-            <a class="page-link" href="{{ page.url | relative_url }}">
-              {{ page.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-    <hr> 
-  </div> -->
-    
-  <!-- {% assign posts = site.posts | sort:"order" %}
-  {%- if posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%} -->
-
 </div>
