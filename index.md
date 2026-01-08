@@ -8,7 +8,7 @@ We're a grassroots movement working to balance our political discussions and uni
 We’re educators, builders, and dog lovers. Above all else, we are concerned citizens looking for a better tomorrow. 
 
 **Our Mission**  
-* Unite voters behind leaders 
+* Unite voters behind better leaders 
 * Provide voters with balanced perspectives on current events
 * Donate a portion of each sale to Democratic candidates in swing states
 
