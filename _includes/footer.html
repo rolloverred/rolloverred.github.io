@@ -12,9 +12,13 @@
           <li class="p-name">
             {%- include social.html -%}
           </li>
+          {%- if site.email -%}
+          <li>
+            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+          {%- endif -%}
         </ul>
-      </div>
-
+        </div>
       </div>
     <div class="custom-legal-footer" style="margin-top: 20px; font-size: 0.6em; color: #555;">
       <p>
