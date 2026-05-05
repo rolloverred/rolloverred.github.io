@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blue's Tale
-date:  2025-09-18 09:05:55 -0700
+date:  2025-09-18 09:00:55 -0700
 order: 1
 ---
 Woof! Welcome to everyone and thank you so much for visiting my very own website "Roll Over Red."   
